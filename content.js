@@ -185,6 +185,7 @@
     S.chain = buildChain(e.target);
     if (!S.chain.length) { setStatus("선택한 요소를 분석할 수 없습니다. 다른 요소를 클릭하세요."); return; }
     S.level = bestLevel(S.chain);
+    statusMsg = "";
     applyLevel();
   }
   function onKey(e) { if (e.key === "Escape") { stopPicker(); setStatus("선택을 취소했습니다."); } }

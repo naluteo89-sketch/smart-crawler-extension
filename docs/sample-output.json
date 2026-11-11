@@ -1,0 +1,89 @@
+{
+  "url": "https://demo-jobs.example/",
+  "title": "데모 채용 게시판",
+  "extracted_at": "2026-11-11T07:39:39.816Z",
+  "record_selector": "#jobs > li.job-item",
+  "mode": "AI 정리",
+  "count": 6,
+  "fields": [
+    {
+      "name": "공고명",
+      "source_keys": [
+        "$>div.card>div.info>a.title"
+      ],
+      "type": "text"
+    },
+    {
+      "name": "링크",
+      "source_keys": [
+        "$>div.card>div.info>a.title@href"
+      ],
+      "type": "url"
+    },
+    {
+      "name": "회사명",
+      "source_keys": [
+        "$>div.card>div.info>p.company"
+      ],
+      "type": "text"
+    },
+    {
+      "name": "급여",
+      "source_keys": [
+        "$>div.card>div.info>div.meta>span.pay"
+      ],
+      "type": "text"
+    },
+    {
+      "name": "지역",
+      "source_keys": [
+        "$>div.card>div.info>div.meta>span.area"
+      ],
+      "type": "text"
+    }
+  ],
+  "records": [
+    {
+      "공고명": "카페 바리스타 (주말)",
+      "링크": "https://demo-jobs.example/job/1000",
+      "회사명": "블루빈커피",
+      "급여": "시급 11,000원",
+      "지역": "광주 동구"
+    },
+    {
+      "공고명": "편의점 야간 스태프",
+      "링크": "https://demo-jobs.example/job/1001",
+      "회사명": "해오름마트 충장점",
+      "급여": "시급 12,500원",
+      "지역": "광주 동구"
+    },
+    {
+      "공고명": "물류센터 상하차",
+      "링크": "https://demo-jobs.example/job/1002",
+      "회사명": "한빛로지스",
+      "급여": "일급 130,000원",
+      "지역": "광주 광산구"
+    },
+    {
+      "공고명": "학원 보조강사",
+      "링크": "https://demo-jobs.example/job/1003",
+      "회사명": "해솔수학학원",
+      "급여": "월 1,800,000원",
+      "지역": "광주 남구"
+    },
+    {
+      "공고명": "레스토랑 홀서빙",
+      "링크": "https://demo-jobs.example/job/1004",
+      "회사명": "그린테이블",
+      "급여": "시급 11,500원",
+      "지역": "광주 서구"
+    },
+    {
+      "공고명": "영화관 매표/매점",
+      "링크": "https://demo-jobs.example/job/1005",
+      "회사명": "별빛시네마",
+      "급여": "시급 10,320원",
+      "지역": "광주 북구"
+    }
+  ]
+}

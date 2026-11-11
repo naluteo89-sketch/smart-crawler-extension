@@ -1,0 +1,3 @@
+[data-sc-hover] { outline: 2px dashed #f59e0b !important; outline-offset: 1px !important; cursor: crosshair !important; }
+[data-sc-record] { outline: 2px solid #2563eb !important; outline-offset: 1px !important; background-color: rgba(37, 99, 235, .06) !important; }
+[data-sc-picked] { outline: 3px solid #16a34a !important; outline-offset: 1px !important; }

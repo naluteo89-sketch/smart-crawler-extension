@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "스마트 크롤러 (클릭 → 비슷한 요소 전체 수집)",
+  "version": "1.0.0",
+  "description": "원하는 요소를 클릭하면 같은 구조의 요소를 모두 찾아 수집하고, OpenAI로 필드를 정리해 JSON으로 내보냅니다.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "스마트 크롤러" },
+  "commands": {
+    "start-picker": {
+      "suggested_key": { "default": "Alt+Shift+S" },
+      "description": "요소 선택 시작"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 13px/1.5 system-ui, "Malgun Gothic", sans-serif; width: 300px; margin: 0; padding: 14px; color: #1f2328; }
+  h1 { font-size: 15px; margin: 0 0 10px; }
+  button { width: 100%; padding: 9px; border: 0; border-radius: 8px; background: #2563eb; color: #fff; font-weight: 600; cursor: pointer; }
+  button.sub { background: #e5e7eb; color: #111; margin-top: 6px; }
+  label { display: block; margin: 10px 0 3px; font-weight: 600; }
+  input { width: 100%; box-sizing: border-box; padding: 7px; border: 1px solid #d0d7de; border-radius: 6px; }
+  .hint { color: #6b7280; font-size: 12px; margin-top: 8px; }
+  #msg { color: #16a34a; font-size: 12px; min-height: 16px; margin-top: 4px; }
+  details { margin-top: 12px; }
+</style>
+</head>
+<body>
+  <h1>🕸️ 스마트 크롤러</h1>
+  <button id="start">요소 선택 시작</button>
+  <div class="hint">페이지에서 수집할 항목(예: 공고 제목) 하나를 클릭하세요. 같은 구조의 요소를 모두 찾아 줍니다. 단축키 Alt+Shift+S</div>
+  <div id="msg"></div>
+  <details>
+    <summary>설정 (OpenAI)</summary>
+    <label for="key">API 키</label>
+    <input id="key" type="password" placeholder="sk-...">
+    <label for="model">모델</label>
+    <input id="model" placeholder="gpt-4o-mini">
+    <button class="sub" id="save">저장</button>
+    <div class="hint">키는 이 브라우저(chrome.storage.local)에만 저장되며 OpenAI로만 전송됩니다.</div>
+  </details>
+  <script src="popup.js"></script>
+</body>
+</html>
